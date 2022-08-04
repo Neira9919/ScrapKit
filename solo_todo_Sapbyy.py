@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import sqlite3 as sql
-import requests,time,webbrowser
+import requests
 import sqldriver as fl
 
 consultas = {
@@ -15,7 +15,7 @@ consultas = {
 
 def telegram_bot_sendtext(bot_message):
     
-    bot_token = '5399404099:AAFCf0zXfTke1CK9mo4l5EUbLsPNrgV3QkE'
+    bot_token = 'your token here <3'
     bot_chatID = '5253743302'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
 
